@@ -1,3 +1,2 @@
-a=int(input())
-c=a//10
-print(c)
+n=int(input())
+print(n//10)
