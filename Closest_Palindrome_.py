@@ -1,26 +1,26 @@
-def is_pal(j):
-    m=j
+def p(n):
+    m=n
     s=0
     while m!=0:
         v=m%10
         s=s*10+v
         m=m//10
-    if j==s:
-        return j
+    if n==s:
+        return n
 x=int(input())
 for i in range(x-1,1,-1):
-    if is_pal(i):
+    if p(i):
         a=i
         break
-g=x+1
-while g!=0:
-    if is_pal(g):
-        b=g
+y=x+1
+while y!=0:
+    if p(y):
+        b=y
         break
-    g+=1
-if (x-a)<(b-x):
+    y+=1
+if(x-a)<(b-x):
     print(a)
-elif (x-a)==(b-x):
+elif(x-a)==(b-x):
     print(a,b)
 else:
     print(b)
